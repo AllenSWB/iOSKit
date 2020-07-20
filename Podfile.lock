@@ -1,0 +1,24 @@
+PODS:
+  - Masonry (1.1.0)
+  - MJRefresh (3.4.3)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Masonry (= 1.1.0)
+  - MJRefresh
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - MJRefresh
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: ef9f1829d442496ce6d816a5335741322e5f9201
+
+COCOAPODS: 1.9.1
