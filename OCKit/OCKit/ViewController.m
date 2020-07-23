@@ -7,8 +7,19 @@
 //
 
 #import "ViewController.h"
-#import "UIButton+BWButton.h"
 #import <Masonry.h>
+#import "OCKit/OCKit.h"
+
+@interface Person : NSObject
+
+@property (nonatomic, assign) NSInteger age;
+@property (nonatomic, strong) NSString *name;
+
+@end
+
+@implementation Person
+@end
+
 @interface ViewController ()
 
 @end
@@ -37,6 +48,17 @@
           make.centerX.mas_equalTo(self.view);
           make.height.mas_equalTo(18);
       }];
+    
+    
+    Person *p1 = [[Person alloc] init];
+    p1.name = @"peter";
+    p1.age = 34;
+    
+    Person *p2 = [[Person alloc] init];
+    [p2 deepCopy:p1];
+    
+
+    
     
 }
 
