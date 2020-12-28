@@ -9,8 +9,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 @interface NSObject (UCARDeepCopy)
 
+/// 深拷贝
 - (void)deepCopy:(NSObject *)originObj;
 
 @end

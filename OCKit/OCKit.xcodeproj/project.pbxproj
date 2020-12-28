@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361C372B259A023300889E5A /* UIButton+EnlargeHitArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 361C3729259A023200889E5A /* UIButton+EnlargeHitArea.m */; };
 		366B039E24C5476C00CFBDC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 366B039D24C5476C00CFBDC1 /* AppDelegate.m */; };
 		366B03A124C5476C00CFBDC1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 366B03A024C5476C00CFBDC1 /* SceneDelegate.m */; };
 		366B03A424C5476C00CFBDC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 366B03A324C5476C00CFBDC1 /* ViewController.m */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		361C3729259A023200889E5A /* UIButton+EnlargeHitArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeHitArea.m"; sourceTree = "<group>"; };
+		361C372A259A023200889E5A /* UIButton+EnlargeHitArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeHitArea.h"; sourceTree = "<group>"; };
 		366B039924C5476C00CFBDC1 /* OCKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366B039C24C5476C00CFBDC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		366B039D24C5476C00CFBDC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +71,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		361C372E259A024300889E5A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				366B03CD24C969BE00CFBDC1 /* NSObject+UCARDeepCopy.h */,
+				366B03CC24C969BE00CFBDC1 /* NSObject+UCARDeepCopy.m */,
+				366B03B824C549F300CFBDC1 /* UIButton+BWButton.h */,
+				366B03B924C549F300CFBDC1 /* UIButton+BWButton.m */,
+				366B03BE24C54A5500CFBDC1 /* UIImage+Color.h */,
+				366B03BF24C54A5500CFBDC1 /* UIImage+Color.m */,
+				361C372A259A023200889E5A /* UIButton+EnlargeHitArea.h */,
+				361C3729259A023200889E5A /* UIButton+EnlargeHitArea.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		366B039024C5476C00CFBDC1 = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +126,8 @@
 		366B03B524C549A500CFBDC1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				366B03C124C54A9200CFBDC1 /* 按钮（图片+文字布局） */,
+				366B03BB24C54A3300CFBDC1 /* UIViewExt.h */,
+				366B03BC24C54A3300CFBDC1 /* UIViewExt.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -123,34 +142,12 @@
 			path = OCKit;
 			sourceTree = "<group>";
 		};
-		366B03C124C54A9200CFBDC1 /* 按钮（图片+文字布局） */ = {
-			isa = PBXGroup;
-			children = (
-				366B03B824C549F300CFBDC1 /* UIButton+BWButton.h */,
-				366B03B924C549F300CFBDC1 /* UIButton+BWButton.m */,
-				366B03BE24C54A5500CFBDC1 /* UIImage+Color.h */,
-				366B03BF24C54A5500CFBDC1 /* UIImage+Color.m */,
-				366B03BB24C54A3300CFBDC1 /* UIViewExt.h */,
-				366B03BC24C54A3300CFBDC1 /* UIViewExt.m */,
-			);
-			name = "按钮（图片+文字布局）";
-			sourceTree = "<group>";
-		};
 		366B03CA24C969AB00CFBDC1 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				366B03CB24C969B500CFBDC1 /* 深拷贝 */,
+				361C372E259A024300889E5A /* Category */,
 			);
 			path = Functions;
-			sourceTree = "<group>";
-		};
-		366B03CB24C969B500CFBDC1 /* 深拷贝 */ = {
-			isa = PBXGroup;
-			children = (
-				366B03CD24C969BE00CFBDC1 /* NSObject+UCARDeepCopy.h */,
-				366B03CC24C969BE00CFBDC1 /* NSObject+UCARDeepCopy.m */,
-			);
-			name = "深拷贝";
 			sourceTree = "<group>";
 		};
 		F30C9FC41EC88E6D6DAA1ADE /* Pods */ = {
@@ -278,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				366B03BA24C549F300CFBDC1 /* UIButton+BWButton.m in Sources */,
+				361C372B259A023300889E5A /* UIButton+EnlargeHitArea.m in Sources */,
 				366B03CE24C969BE00CFBDC1 /* NSObject+UCARDeepCopy.m in Sources */,
 				366B03A424C5476C00CFBDC1 /* ViewController.m in Sources */,
 				366B03C024C54A5500CFBDC1 /* UIImage+Color.m in Sources */,
